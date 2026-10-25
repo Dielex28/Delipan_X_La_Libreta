@@ -1,0 +1,9 @@
+# Vista previa en un solo archivo (se genera con herramientas/vista-previa.py)
+dist/
+
+# Archivos del sistema y de editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.swp
