@@ -1,0 +1,34 @@
+DELIPAN · SITIO WEB
+La Libreta — Edición Delipan, por Axiom Digital Studio
+
+CÓMO VERLO EN TU PC
+1. Descomprime esta carpeta.
+2. Abre "index.html" con doble clic (Chrome, Edge o Firefox).
+   No hace falta instalar nada. Necesita internet solo para las
+   tipografías y el mapa de Google.
+
+PARA EDITARLO CÓMODO (opcional)
+- Abre la carpeta en Visual Studio Code.
+- Instala la extensión "Live Server" y da clic en "Go Live":
+  cada cambio que guardes se ve al instante en el navegador.
+
+QUÉ HAY EN LA CARPETA
+index.html     El contenido de todas las secciones.
+css/sitio.css  El diseño y todas las animaciones.
+js/sitio.js    El comportamiento: menú, vitrina, temporada, galería,
+               cotizador, botón de WhatsApp, horario en vivo, etc.
+img/           Fotos (img/productos) e imagen para compartir.
+extras/        El sitio completo en un solo archivo, para mandarlo
+               por WhatsApp o correo y que alguien lo vea sin descomprimir.
+README.md      Documentación completa: secciones, dónde cambiar
+               teléfono, horario y temporadas, y lo pendiente.
+
+DATOS QUE SE CAMBIAN SEGUIDO
+- Fechas de temporada (pan de muerto, rosca, calabaza):
+  js/sitio.js → CONFIG.temporadas
+- Horario abierto/cerrado: js/sitio.js → CONFIG.horario
+- Número de WhatsApp del cotizador: js/sitio.js → CONFIG.whatsapp
+- Reseñas de Google: index.html → sección id="resenas"
+
+EL CÓDIGO TAMBIÉN ESTÁ EN GITHUB
+Repositorio Dielex28/Libreta-x-Delipan, rama ccr-60e4972f-db6du4.
