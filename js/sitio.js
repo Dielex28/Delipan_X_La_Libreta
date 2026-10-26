@@ -5,9 +5,10 @@
   window.DELIPAN = true;
 
   const CONFIG = {
-    // Cuando La Libreta, Edición Delipan, esté en línea, pon aquí sus direcciones (por ejemplo 'libreta/?acceso=cliente').
-    // Mientras estén vacías, los botones muestran un aviso con teléfono y WhatsApp.
-    libreta: {cliente: '', personal: ''},
+    // Cuando La Libreta, Edición Delipan, esté en línea, pon aquí su dirección (por ejemplo 'https://libreta.delipan.mx').
+    // «Entrar como cliente» abre su pestaña de clientes y «Acceso personal» la del equipo.
+    // Mientras esté vacía, los botones muestran un aviso con teléfono y WhatsApp.
+    libreta: '',
     zona: 'America/Mexico_City',
     whatsapp: '523315341316',
     // Día de la semana (0 = domingo) → [abre, cierra] en horas; sin entrada = cerrado
@@ -785,8 +786,8 @@
     setTimeout(fin, 520);
   };
   $$('[data-libreta]').forEach(b => b.addEventListener('click', () => {
-    const tipo = b.dataset.libreta, url = CONFIG.libreta[tipo];
-    if (url) { location.href = url; return; }
+    const tipo = b.dataset.libreta, base = String(CONFIG.libreta || '').trim().replace(/\/+$/, '');
+    if (base) { location.href = `${base}/?entrar=${tipo === 'cliente' ? 'clientes' : 'equipo'}`; return; }
     const [titulo, texto] = TEXTOS[tipo];
     $('[data-aviso-titulo]', aviso).textContent = titulo;
     $('[data-aviso-texto]', aviso).textContent = texto;

@@ -65,7 +65,7 @@ herramientas/vista-previa.py  genera el sitio en un solo archivo (ver abajo)
 | Número de WhatsApp del cotizador | `CONFIG.whatsapp` en `js/sitio.js`; los demás botones usan el enlace `wa.me` en `index.html` |
 | Fechas de temporada | `CONFIG.temporadas` en `js/sitio.js` (inicio, fin y si la foto lleva «Imagen ilustrativa») |
 | Reseñas de Google | `index.html`, sección `#resenas` (se copian a mano cuando llegan nuevas) |
-| Accesos a La Libreta | `CONFIG.libreta` en `js/sitio.js`. Mientras estén vacíos, los botones muestran un aviso con teléfono y WhatsApp; con una dirección, llevan directo a La Libreta |
+| Accesos a La Libreta | `CONFIG.libreta` en `js/sitio.js`: la dirección de La Libreta (por ejemplo `https://libreta.delipan.mx`). Vacía, los botones muestran un aviso con teléfono y WhatsApp; con dirección, «Entrar como cliente» abre la entrada de clientes (teléfono y PIN) y «Acceso personal» la del equipo |
 
 ## Vista previa en un solo archivo
 
@@ -110,7 +110,7 @@ Tipografías: Cormorant Garamond (títulos), Jost (texto y etiquetas) y JetBrain
 - [ ] Preguntas frecuentes y la historia de Delipan, con fotos del equipo.
 - [ ] Correo para cotizaciones, redes sociales y año de fundación (opcionales).
 - [ ] Dominio, y con él las etiquetas para compartir (ver «Publicarlo»).
-- [ ] Direcciones de La Libreta, Edición Delipan, cuando esté en línea.
+- [ ] Dominio para La Libreta (por ejemplo `libreta.delipan.mx`) y escribirlo en `CONFIG.libreta`.
 
 ## Relación con La Libreta
 
